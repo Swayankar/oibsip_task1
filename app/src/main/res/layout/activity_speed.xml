@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Speed"
+    android:orientation="vertical"
+    android:background="@drawable/bgcon">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear6"
+        android:layout_marginTop="58dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert m/sec to km/hr"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/meter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:hint="Enter a number"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/speed_converter"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Convert to km/hr"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/speed_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Press Convert"
+            android:gravity="center"
+            android:padding="2dp"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linear6">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/kg_g"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/kgtog"
+                android:layout_marginTop="25dp"/>
+
+            <ImageView
+                android:id="@+id/kg_pound"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/kgtopound"
+                android:layout_marginTop="25dp"/>
+
+            <ImageView
+                android:id="@+id/temp"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/temp"
+                android:layout_marginTop="25dp"/>
+
+            <ImageView
+                android:id="@+id/m_feet"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/mtofeet"
+                android:layout_marginTop="25dp"/>
+
+            <ImageView
+                android:id="@+id/m_cm"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/mtocm"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
